@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let a = 1,
+            b = 1,
+            c, d;
+        //    Унарный оператор. Добавляет единицу к своему операнду.
+        //     Если используется в качестве префикса (++x), то возвращает значение операнда с добавленной к нему единицей; 
+        //     а в случае применения в качестве окончания (x++) возвращает значение операнда перед добавлением к нему единицы.
+        c = ++a; // a = 2, ++a возвращает 2
+        alert(c); // c = 2
+
+        d = b++; // b = 2, b++ возвращает 1,  d = 1
+        alert(d); // d = 1
+
+        c = 2 + ++a; // ++a возвращает 3, a = 3, c = 5
+        alert(c); // c = 5
+
+        d = 2 + b++; // b++ возвращает 2, b = 3, d = 2 + 2
+        alert(d); // d = 4
+
+        alert(a); // a = 3
+        alert(b); // b = 3
+    </script>
+</body>
+
+</html>
