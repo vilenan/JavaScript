@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let a = +prompt("Введите первое число: ");
+        let b = +prompt("Введите второе число: ");
+        let operation = prompt("Введите арифметическую операцию (сложение, вычитаение, умножение или деление): ");
+
+        mathOperation(a, b, operation);
+
+        /** функция вычисляет сумму параметров */
+        function getSumm(a, b) {
+            return a + b;
+        }
+
+        /**функция вычисляет разность параметров*/
+        function getDiff(a, b) {
+            return a - b;
+        }
+
+        /**функция вычисляет произведение параметров*/
+        function getMultiplication(a, b) {
+            return a * b;
+        }
+        /**функция вычисляет частное параметров*/
+        function getDivision(a, b) {
+            return a / b;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "сложение":
+                    return getSumm(arg1, arg2);
+
+                case "вычитание":
+                    return getDiff(arg1, arg2);
+
+                case "умножение":
+                    return getMultiplication(arg1, arg2);
+
+                case "деление":
+                    return getDivision(arg1, arg2);
+
+                default:
+                    alert("Введена некорректная операция");
+            }
+        }
+    </script>
+</body>
+
+</html>
